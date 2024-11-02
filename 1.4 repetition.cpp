@@ -9,57 +9,67 @@ using namespace std;
     
 int main()
 {
-    
-   int number_one = 0;
 
-  int number_two = 0;
+    int number_one = 0;
 
-  string operation;
+    int number_two = 0;
+
+    string operation;
 
 
- cout << "Please type the name of the operator to use the calculator." << endl; 
+    cout << "Please type the name of the operator to use the calculator." << endl;
 
- cout << "Addition" << endl;
- cout << "Subtraction" << endl;
- cout << "Multiplication" << endl; 
- cout << "Division \n " << endl; 
+    cout << "Addition" << endl;
+    cout << "Subtraction" << endl;
+    cout << "Multiplication" << endl;
+    cout << "Division \n " << endl;
 
- cout << "Enter your choice" << endl;
+    cout << "Enter your choice" << endl;
 
- cin >> operation; 
+    cin >> operation;
 
- cout << "Enter the first number" << endl;
+    cout << "Enter the first number" << endl;
 
- cin >> number_one;
+    cin >> number_one;
 
- cout << "Enter the second number" << endl; 
+    cout << "Enter the second number" << endl;
 
- cin >> number_two; 
+    cin >> number_two;
 
- if (operation == "Addition") {
+    if (operation == "Addition") {
 
-     cout << "The answer is: \n" << number_one + number_two << endl;
- }
+        cout << "The answer is: \n" << number_one + number_two << endl;
+    }
 
- else if (operation == "Subtraction") {
+    else if (operation == "Subtraction") {
 
-     cout << "The answer is: \n" << number_one - number_two << endl;
- }
+        cout << "The answer is: \n" << number_one - number_two << endl;
+    }
 
- else if (operation == "Multiplication") {
+    else if (operation == "Multiplication") {
 
-     cout << "The answer is: \n" << number_one * number_two << endl;
- }
+        cout << "The answer is: \n" << number_one * number_two << endl;
+    }
 
- else if (operation == "Division") {
+    else if (operation == "Division") {
 
-     cout << "The answer is: \n" << number_one / number_two << endl;
- }
-if (number_two== 0) {
+        if (number_two != 0) {
 
-    cout << "Error: Cannot be divided by 0 \n";
 
- }
+            cout << "The answer is: \n" << number_one / number_two << endl;
+        }
+        else {
+
+            cout << "Error: cannot be divided by zero\n" << endl;
+
+        }
+
+    }
+    else
+
+
+cout << "Invalid operation \n" << endl; 
+
 
 
     return 0; 
