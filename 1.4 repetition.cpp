@@ -14,7 +14,7 @@ int main() {
 	double number_two = 0.0;
 	char operation;
 	//asking user to choose an operator 
-	cout << "Please select an operator listed below:";
+	cout << "Please select an operator listed below:\n";
 	//a list of operator such as addition subtraction multiplication and divicion
 	cout << "Addition (+) \n"
 		<< "Subtraction (-) \n"
@@ -58,7 +58,7 @@ int main() {
 
 				cout << number_one << "/" << number_two << "=" << number_one / number_two << endl;
 			}
-		//if the user enters 0 for the second number, it will display invalid: Division by zero. 
+			//if the user enters 0 for the second number, it will display invalid: Division by zero. 
 			else
 			{
 
@@ -66,7 +66,8 @@ int main() {
 			}
 			break;
 
-
+		}
+		return 0;
 		}
 
 
